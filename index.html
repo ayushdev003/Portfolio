@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="" X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AYUSH DEV - PORTFOLIO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(23, 23, 23);
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(207, 237, 241);
+            color: rgb(0, 0, 0);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 20px;
+        }
+
+        main hr {
+            border: 0;
+            background: rgb(207, 237, 241);
+            height: 1.1px;
+            margin: 100px 120px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        nav ul li a:hover {
+            color: rgb(126, 126, 126);
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin: 5vw 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            width: 60%;
+            font-size: 2rem;
+        }
+
+        .rightSection {
+            width: 50%;
+        }
+
+        .rightSection img {
+            width: 100%;
+            margin: 50px 0;
+            border-radius: 50%;
+        }
+
+        #element {
+            color: rgb(112, 186, 215);
+        }
+
+        .secondSection {
+    
+            align-items: center;
+            justify-content: space-around;
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection h1{
+            font-size: 1.7rem;
+        }
+
+        .leftSec{
+            width: 55%;
+            font-size: 1rem;
+            padding-top: 3%;
+        }
+
+        .rightSec{
+            
+            width: 50%;
+        }
+
+        div .leftSec{
+            text-align: justify;
+            text-justify: inter-word;
+        }
+
+        .sec_sec_div{
+            display: flex;
+        }
+
+    
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Ayush Dev</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">About Me</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hello, I am Ayush Dev
+                <div>and I'm a CSE undergrad at KIIT Bhubaneswar.</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="dp.JPG" alt="Avatar" />
+            </div>
+        </section>
+        <hr />
+
+        <section class="secondSection">
+            <h1>About Me</h1>
+            <div class="sec_sec_div">
+            <div class="leftSec">
+                <p align="justify">
+                    My name is Ayush Dev and I hail from Dhanbad, Jharkhand.
+                    I have completed my education from Dhanbad itself. I am
+                    currently pursuing B.Tech in Computer Science and
+                    Engineering from Kalinga Institue of Industrial Technology.
+                    Studying in the 4th semester right now, I am most excited
+                    about Programming in JAVA and it's applications. My core
+                    competencies include creativity, communication, collaboration,
+                    and problem solving.
+                </p>
+            </div>
+            <div class="rightSec">
+                Education
+            </div>
+        </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed("#element", {
+            strings: [
+                "Welcome to my portfolio.",
+                "I am a",
+                "Photographer",
+                "Editor",
+                "Developer",
+                "and a",
+                "Tech Enthusiast!",
+            ],
+            typeSpeed: 80,
+        });
+    </script>
+</body>
+
+</html>
